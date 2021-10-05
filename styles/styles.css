@@ -1,0 +1,17 @@
+.catalog-filter {
+  width: 1200px;
+  height: 408px;
+  background-image: url("/img/catalog/background_catalog.jpg");
+}
+
+.mailing {
+  width: 1200px;
+  height: 411px;
+  background-image: url("/img/index/background_subscribe.jpg");
+}
+
+.main-screen-image {
+  width: 1200px;
+  height: 485px;
+  background-image: url("/img/index/background_welcome.jpg");
+}
