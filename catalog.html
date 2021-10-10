@@ -16,12 +16,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a
-              class="navigation-link navigation-link-current"
-              href="catalog.html"
-            >
-              Гостиницы
-            </a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <img
@@ -38,7 +33,7 @@
           <a class="button" href="#">
             <span class="visually-hidden">Избранное</span>
           </a>
-          <button class="button" type="button">Хочу сюда!</button>
+          <button class="button button-header" type="button">Хочу сюда!</button>
         </div>
       </nav>
     </header>
@@ -180,7 +175,7 @@
               <span class="visually-hidden">Изменить максимальную цену.</span>
             </button>
           </fieldset>
-          <button class="button button-submit" type="submit">Применить</button>
+          <button class="button button-apply" type="submit">Применить</button>
           <button class="button button-reset" type="reset">Сбросить</button>
         </form>
       </section>
@@ -212,7 +207,7 @@
           </li>
           <li class="rendering-type-item">
             <button class="rendering-type-list" type="button">
-              <span class="visually-hidden">Показать в виде списа</span>
+              <span class="visually-hidden">Показать в виде списка</span>
             </button>
           </li>
         </ul>
@@ -226,9 +221,7 @@
               height="120"
               alt="Amara Resort & Spa"
             />
-            <a class="hotel-card-link" href="">
-              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            </a>
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-cost">От 4000 ₽</p>
             <button class="button button-details" type="button">
@@ -247,9 +240,7 @@
               height="120"
               alt="Desert Quail Inn"
             />
-            <a class="hotel-card-link" href="">
-              <h3 class="hotel-card-title">Desert Quail Inn</h3>
-            </a>
+            <h3 class="hotel-card-title">Desert Quail Inn</h3>
             <p class="hotel-card-type">Мотель</p>
             <p class="hotel-card-cost">От 3000 ₽</p>
             <button class="button button-details" type="button">
@@ -268,9 +259,7 @@
               height="120"
               alt="Desert Quail Inn"
             />
-            <a class="hotel-card-link" href="">
-              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-            </a>
+            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             <p class="hotel-card-type">Апартаменты</p>
             <p class="hotel-card-cost">От 2000 ₽</p>
             <button class="button button-details" type="button">
@@ -289,9 +278,7 @@
               height="120"
               alt="Desert Quail Inn"
             />
-            <a class="hotel-card-link" href="">
-              <h3 class="hotel-card-title">GreenTree Inn</h3>
-            </a>
+            <h3 class="hotel-card-title">GreenTree Inn</h3>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-cost">От 3000 ₽</p>
             <button class="button button-details" type="button">
@@ -309,12 +296,7 @@
         <div class="pagination">
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -330,11 +312,6 @@
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
             </li>
           </ul>
           <form class="rendering-type-amount">
@@ -364,7 +341,9 @@
         >
           <label class="visually-hidden" for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="Ваш e-mail" />
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button button-mailing" type="submit">
+            Подписаться
+          </button>
         </form>
       </section>
     </main>
@@ -396,9 +375,15 @@
         <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
       </div>
 
-      <div class="footer-academy-logo">
-        <h2 class="visually-hidden">Лого HTML academy</h2>
-      </div>
+      <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
+        <img
+          class="logo-htmlacademy"
+          src="img/logo_htmlacademy.svg"
+          width="115"
+          height="32"
+          alt="Лого HTML academy"
+        />
+      </a>
     </footer>
   </body>
 </html>
