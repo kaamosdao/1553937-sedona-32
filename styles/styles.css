@@ -15,11 +15,19 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: normal;
   color: #000000;
+}
+
+html {
+  height: 100%;
 }
 
 .advantages {
@@ -30,6 +38,23 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
+}
+
+.advantages-image {
+  list-style-type: none;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 384px;
+  list-style-type: none;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-number {
@@ -85,8 +110,7 @@ body {
   border-radius: 4px;
 }
 
-.button-details,
-.button-header {
+.button-details {
   background-color: #756257;
   border-radius: 4px;
 }
@@ -96,7 +120,16 @@ body {
   border-radius: 4px;
 }
 
+.button-header {
+  width: 160px;
+  height: 37px;
+  background-color: #756257;
+  border-radius: 4px;
+}
+
 .button-mailing {
+  width: 200px;
+  height: 60px;
   font-size: 20px;
   line-height: 26px;
   background-color: #83b3d3;
@@ -111,6 +144,8 @@ body {
 }
 
 .button-searching {
+  width: 575px;
+  height: 60px;
   font-size: 20px;
   line-height: 36px;
   background-color: #756257;
@@ -120,6 +155,8 @@ body {
 .button-show-more {
   font-size: 20px;
   line-height: 26px;
+  width: 575px;
+  height: 60px;
   font-weight: bold;
   background: #83b3d3;
   border-radius: 4px;
@@ -144,6 +181,10 @@ body {
   text-transform: uppercase;
 }
 
+.catalog-mailing {
+  text-align: center;
+}
+
 .catalog-title {
   font-style: normal;
   font-size: 60px;
@@ -163,6 +204,10 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.header-logo {
+  margin-left: 151px;
 }
 
 .hotel-card-title {
@@ -192,7 +237,33 @@ body {
   border-radius: 4px;
 }
 
+.footer-logo-htmlacademy {
+  margin-left: 53px;
+  align-self: center;
+}
+
+.footer-phone {
+  width: 720px;
+  margin-left: 61px;
+}
+
+.footer-social {
+  width: 110px;
+  margin-left: 72px;
+}
+
+.footer-social-item {
+  list-style-type: none;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+}
+
 input[name="email"] {
+  width: 600px;
+  height: 60px;
   font-size: 18px;
   line-height: 26px;
   font-weight: normal;
@@ -204,14 +275,11 @@ input[name="email"] {
 }
 
 .mailing {
+  width: 1200px;
   text-align: center;
   color: #ffffff;
   background-color: #83b3d3;
   background-image: url("/img/index/background_subscribe.jpg");
-}
-
-.mailing-catalog {
-  text-align: center;
 }
 
 .mailing-description {
@@ -227,12 +295,33 @@ input[name="email"] {
   text-transform: uppercase;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.main-index {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-screen {
   text-align: center;
 }
 
 .main-screen-about {
+  width: 1200px;
+  text-align: center;
   background-color: #ffffff;
+}
+
+.main-screen-description {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #333333;
 }
 
 .main-screen-image {
@@ -242,18 +331,30 @@ input[name="email"] {
   background-repeat: no-repeat;
 }
 
+.main-screen-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-screen-title {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.main-screen-description {
-  font-size: 22px;
-  line-height: 36px;
-  font-weight: normal;
-  color: #333333;
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-item {
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -265,12 +366,31 @@ input[name="email"] {
   color: #000000;
 }
 
+.navigation-list {
+  margin: 0;
+  margin-left: 72px;
+  padding: 0;
+  width: 309px;
+}
+
+.navigation-user {
+  margin-left: auto;
+  margin-right: 72px;
+  width: 250px;
+}
+
 .page-footer {
+  display: flex;
+  width: 1200px;
   text-align: center;
 }
 
 .page-footer a {
   color: #000000;
+}
+
+.page-footer-container {
+  display: flex;
 }
 
 .page-header {
@@ -307,12 +427,29 @@ input[name="email"] {
 }
 
 .searching-description {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
   color: #333333;
 }
 
 .searching-title {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
