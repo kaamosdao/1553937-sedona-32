@@ -69,23 +69,23 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item advantages-blue-bg">
+        <div class="advantages-image-row">
+          <div class="advantages-item advantages-blue-bg">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-number">— №1 —</p>
             <p class="advantages-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-          </li>
-          <li class="advantages-image">
-            <img
-              class="advantages-image"
-              src="img/index/photo_town.jpg"
-              width="800"
-              height="384"
-              alt="Город на фоне гор"
-            />
-          </li>
+          </div>
+          <img
+            class="advantages-image"
+            src="img/index/photo_town.jpg"
+            width="800"
+            height="384"
+            alt="Город на фоне гор"
+          />
+        </div>
+        <ul class="advantages-list">
           <li
             class="advantages-item advantages-light-gray-bg accomodation-icon"
           >
@@ -106,7 +106,7 @@
               Не только китайского, но и настоящего местного производства!
             </p>
           </li>
-          <li class="advantages-image">
+          <div class="advantages-image-row">
             <img
               class="advantages-image"
               src="img/index/photo_canyon.jpg"
@@ -114,14 +114,14 @@
               height="384"
               alt="Каньон"
             />
-          </li>
-          <li class="advantages-item advantages-blue-bg">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-number">— №2 —</p>
-            <p class="advantages-description">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
-          </li>
+            <div class="advantages-item advantages-blue-bg">
+              <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <p class="advantages-number">— №2 —</p>
+              <p class="advantages-description">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
+          </div>
           <li class="advantages-item advantages-light-gray-bg">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-number">— №3 —</p>
@@ -160,70 +160,63 @@
       </section>
 
       <section class="mailing">
-          <h2 class="visually-hidden">Рассылка</h2>
-          <p class="mailing-title">
-            <strong>Подпишитесь на рассылку</strong>
-          </p>
-          <p class="mailing-description">
-            Только полезная информация и никакого спама, честное бойскаутское!
-          </p>
-          <form
-            class="mailing-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label class="visually-hidden" for="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Ваш e-mail"
-            />
-            <button class="button button-mailing" type="submit">
-              Подписаться
-            </button>
-          </form>
+        <h2 class="visually-hidden">Рассылка</h2>
+        <p class="mailing-title">
+          <strong>Подпишитесь на рассылку</strong>
+        </p>
+        <p class="mailing-description">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form
+          class="mailing-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label class="visually-hidden" for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Ваш e-mail" />
+          <button class="button button-mailing" type="submit">
+            Подписаться
+          </button>
+        </form>
       </section>
     </main>
 
     <footer class="page-footer">
-        <div class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button-twitter" href="#">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button-facebook" href="#">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button-youtube" href="#">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button-twitter" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-youtube" href="#">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="footer-phone">
-          <h2 class="visually-hidden">Телефон</h2>
-          <a class="contacts-phone" href="tel:88128121212"
-            >+7 (812) 812-12-12</a
-          >
-        </div>
+      <div class="footer-phone">
+        <h2 class="visually-hidden">Телефон</h2>
+        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+      </div>
 
-        <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
-          <img
-            class="logo-htmlacademy"
-            src="img/logo_htmlacademy.svg"
-            width="115"
-            height="32"
-            alt="Лого HTML academy"
-          />
-        </a>
+      <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
+        <img
+          class="logo-htmlacademy"
+          src="img/logo_htmlacademy.svg"
+          width="115"
+          height="32"
+          alt="Лого HTML academy"
+        />
+      </a>
     </footer>
   </body>
 </html>
