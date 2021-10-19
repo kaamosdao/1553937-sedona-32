@@ -67,7 +67,7 @@
             action="https://echo.htmlacademy.ru/"
             method="get"
           >
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-infrastructure">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -108,7 +108,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-accomodation">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -151,7 +151,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-price">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
               <label
@@ -189,7 +189,7 @@
                 <span class="visually-hidden">Изменить максимальную цену.</span>
               </button>
             </fieldset>
-            <div class="buttons">
+            <div class="catalog-filter-buttons">
               <button class="button button-apply" type="submit">
                 Применить
               </button>
@@ -198,9 +198,10 @@
           </form>
         </div>
       </section>
+
       <section class="catalog-sorting catalog-wrapper">
         <h2 class="catalog-hotels-title">Найдено гостиниц: 38</h2>
-        <form class="sorting-type">
+        <form class="sorting-type-form">
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="cheap">Сначала дешевые</option>
@@ -212,7 +213,7 @@
           </button>
         </form>
 
-        <ul class="rendering-type-list">
+        <ul class="rendering-list">
           <li class="rendering-type-item">
             <button class="rendering-type-cards" type="button">
               <span class="visually-hidden">Показать в виде карточек</span>
@@ -224,7 +225,7 @@
             </button>
           </li>
           <li class="rendering-type-item">
-            <button class="rendering-type-list" type="button">
+            <button class="rendering-type-list rendering-active" type="button">
               <span class="visually-hidden">Показать в виде списка</span>
             </button>
           </li>
@@ -351,61 +352,73 @@
       </section>
 
       <section class="catalog-mailing">
-        <h2 class="visually-hidden">Рассылка</h2>
-        <p class="mailing-title"><strong>Подпишитесь на рассылку</strong></p>
-        <p class="mailing-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form
-          class="mailing-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <label class="visually-hidden" for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Ваш e-mail" />
-          <button class="button button-mailing" type="submit">
-            Подписаться
-          </button>
-        </form>
+        <div class="catalog-mailing-wrapper">
+          <h2 class="visually-hidden">Рассылка</h2>
+          <p class="mailing-title"><strong>Подпишитесь на рассылку</strong></p>
+          <p class="mailing-description">
+            Только полезная информация и никакого спама,<br />честное
+            бойскаутское!
+          </p>
+          <form
+            class="mailing-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <label class="visually-hidden" for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Ваш e-mail"
+            />
+            <button class="button button-mailing" type="submit">
+              Подписаться
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button-twitter" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button-facebook" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button-youtube" href="#">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="footer-wrapper">
+        <div class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button-twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button-facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button-youtube" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="footer-phone">
-        <h2 class="visually-hidden">Телефон</h2>
-        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-      </div>
+        <div class="footer-phone">
+          <h2 class="visually-hidden">Телефон</h2>
+          <a class="contacts-phone" href="tel:88128121212"
+            >+7 (812) 812-12-12</a
+          >
+        </div>
 
-      <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
-        <img
-          class="logo-htmlacademy"
-          src="img/logo_htmlacademy.svg"
-          width="115"
-          height="32"
-          alt="Лого HTML academy"
-        />
-      </a>
+        <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
+          <img
+            class="logo-htmlacademy"
+            src="img/logo_htmlacademy.svg"
+            width="115"
+            height="32"
+            alt="Лого HTML academy"
+          />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
