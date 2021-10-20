@@ -148,6 +148,7 @@ html {
 }
 
 .button-details {
+  grid-area: btn-d;
   width: 151px;
   height: 37px;
   background-color: #756257;
@@ -155,6 +156,7 @@ html {
 }
 
 .button-favorites {
+  grid-area: btn-f;
   width: 160px;
   height: 37px;
   background-color: #83b3d3;
@@ -162,6 +164,7 @@ html {
 }
 
 .button-favorites-added {
+  grid-area: btn-f;
   width: 160px;
   height: 37px;
   background: #7db54f;
@@ -178,6 +181,7 @@ html {
 .button-mailing {
   width: 200px;
   height: 60px;
+  padding: 0;
   font-size: 20px;
   line-height: 26px;
   background-color: #83b3d3;
@@ -331,46 +335,8 @@ fieldset {
   border: none;
 }
 
-.header-logo {
-  margin-left: 60px;
-}
-
-.hotel-button {
-  padding-top: 31px;
-  padding-bottom: 31px;
-  text-align: center;
-}
-
-.hotel-card-title {
-  font-size: 24px;
-  line-height: 31px;
-  font-weight: bold;
-}
-
-.hotel-card-type,
-.hotel-card-cost {
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: normal;
-  color: #333333;
-}
-
-.hotel-card-rating {
-  width: 160px;
-  height: 37px;
-  font-size: 16px;
-  line-height: 37px;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-  background-color: #f2f2f2;
-  border-radius: 4px;
-}
-
-.hotel-list {
-  margin: 0;
-  padding: 0;
+.filter-price-inputs {
+  display: flex;
 }
 
 .footer-logo-htmlacademy {
@@ -413,13 +379,88 @@ fieldset {
   margin-right: auto;
 }
 
+.header-logo {
+  margin-left: 60px;
+}
+
+.hotel-button {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  text-align: center;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.hotel-card {
+  display: grid;
+  grid-template-columns: 180px 36px 151px 8px 160px 361px 160px;
+  grid-template-rows: min-content min-content 30px min-content;
+  grid-template-areas:
+    "img    gap    title  title  title  gap3    stars"
+    "img    gap    type   gap5   cost   gap3    gap4"
+    "img    gap    gap2   gap2   gap2   gap3    gap4"
+    "img    gap    btn-d  gap6   btn-f  gap3    rating";
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #E6E6E6;
+}
+
+.hotel-card-cost {
+  grid-area: cost;
+  margin: 0;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.hotel-card-image {
+  display: block;
+  grid-area: img;
+}
+
 .hotel-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.hotel-card-rating {
+  grid-area: rating;
+  width: 160px;
+  height: 37px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 37px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.hotel-card-title {
+  grid-area: title;
+  margin: 0;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+}
+
+.hotel-card-type {
+  grid-area: type;
+  margin: 0;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+  color: #333333;
 }
 
 input[name="email"] {
   width: 600px;
   height: 60px;
+  padding: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: normal;
@@ -427,7 +468,6 @@ input[name="email"] {
   background-color: #f2f2f2;
   border: none;
   border-radius: 10px 0px 0px 10px;
-  opacity: 0.6;
 }
 
 .mailing {
@@ -444,6 +484,11 @@ input[name="email"] {
   font-size: 22px;
   line-height: 26px;
   font-weight: normal;
+}
+
+.mailing-form {
+  display: grid;
+  grid-template-columns: 600px 200px;
 }
 
 .mailing-title {

@@ -153,41 +153,47 @@
 
             <fieldset class="catalog-filter-price">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="filter-price-inputs">
+                <label
+                  class="catalog-filter-label visually-hidden"
+                  for="min-price"
+                >
+                  от
+                </label>
+                <input
+                  class="catalog-filter-input"
+                  type="number"
+                  name="min-price"
+                  id="min-price"
+                  placeholder="от"
+                />
 
-              <label
-                class="catalog-filter-label visually-hidden"
-                for="min-price"
-              >
-                от
-              </label>
-              <input
-                class="catalog-filter-input"
-                type="number"
-                name="min-price"
-                id="min-price"
-                placeholder="от"
-              />
-
-              <label
-                class="catalog-filter-label visually-hidden"
-                for="max-price"
-              >
-                до
-              </label>
-              <input
-                class="catalog-filter-input"
-                type="number"
-                name="max-price"
-                id="max-price"
-                placeholder="до"
-              />
-
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
+                <label
+                  class="catalog-filter-label visually-hidden"
+                  for="max-price"
+                >
+                  до
+                </label>
+                <input
+                  class="catalog-filter-input"
+                  type="number"
+                  name="max-price"
+                  id="max-price"
+                  placeholder="до"
+                />
+              </div>
+              <div class="filter-price-buttons">
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">
+                    зменить минимальную цену.
+                  </span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">
+                    Изменить максимальную цену.
+                  </span>
+                </button>
+              </div>
             </fieldset>
             <div class="catalog-filter-buttons">
               <button class="button button-apply" type="submit">
