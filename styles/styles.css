@@ -43,6 +43,39 @@ html {
   font-weight: normal;
 }
 
+.advantages-icon-accomodation::after {
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  top: 89px;
+  left: 50%;
+  margin-left: -38px;
+  background-image: url(/img/index/icon_housing.svg);
+  content: "";
+}
+
+.advantages-icon-food::after {
+  position: absolute;
+  width: 74px;
+  height: 70px;
+  top: 91px;
+  left: 50%;
+  margin-left: -37px;
+  background-image: url(/img/index/icon_food.svg);
+  content: "";
+}
+
+.advantages-icon-souvenir::after {
+  position: absolute;
+  width: 64px;
+  height: 76px;
+  top: 85px;
+  left: 50%;
+  margin-left: -32px;
+  background-image: url(/img/index/icon_souvenirs.svg);
+  content: "";
+}
+
 .advantages-image-row {
   display: flex;
 }
@@ -52,6 +85,7 @@ html {
 }
 
 .advantages-item {
+  position: relative;
   width: 400px;
   height: 384px;
   list-style-type: none;
@@ -138,6 +172,7 @@ html {
   text-transform: uppercase;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 .button-apply {
@@ -188,6 +223,29 @@ html {
   border-radius: 0px 10px 10px 0px;
 }
 
+.button-mailing:hover {
+  background-color: #68a2ca;
+}
+
+.button-mailing:focus-visible {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+}
+
+.button-mailing:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-mailing:disabled {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-mailing:disabled:hover {
+  cursor: default;
+}
+
 .button-reset {
   width: 160px;
   height: 48px;
@@ -215,8 +273,67 @@ html {
   width: 575px;
   height: 60px;
   font-weight: bold;
-  background: #83b3d3;
+  background-color: #83b3d3;
   border-radius: 4px;
+}
+
+.button-facebook,
+.button-twitter,
+.button-youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button-facebook:hover .footer-social-icon,
+.button-twitter:hover .footer-social-icon,
+.button-youtube:hover .footer-social-icon {
+  fill: #68a2ca;
+}
+
+.button-facebook:focus-visible,
+.button-twitter:focus-visible,
+.button-youtube:focus-visible {
+  box-shadow: inset 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.button-facebook:active,
+.button-twitter:active,
+.button-youtube:active {
+  opacity: 0.3;
+}
+
+.button-header:hover,
+.button-searching:hover {
+  background-color: #615048;
+}
+
+.button-header:focus-visible,
+.button-searching:focus-visible {
+  background-color: #615048;
+  outline: 3px solid #83b3d3;
+}
+
+.button-header:active,
+.button-searching:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-header:disabled,
+.button-searching:disabled {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-header:disabled:hover,
+.button-searching:disabled:hover {
+  cursor: default;
 }
 
 .catalog-filter {
@@ -321,12 +438,27 @@ html {
 }
 
 .contacts-phone {
+  padding: 15px;
   font-weight: normal;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 10px;
+}
+
+.contacts-phone:hover {
+  color: #756257;
+}
+
+.contacts-phone:focus-visible {
+  box-shadow: inset 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
 }
 
 fieldset {
@@ -335,13 +467,59 @@ fieldset {
   border: none;
 }
 
+.favorites-number {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  background-color: transparent;
+}
+
+.favorites-ellipse {
+  position: relative;
+  width: 19px;
+  height: 19px;
+}
+
 .filter-price-inputs {
   display: flex;
 }
 
+.focus-wrapper {
+  display: block;
+  padding: 4px 12px 6px;
+  border-radius: 10px;
+}
+
+.footer-logo-icon {
+  fill: #000000;
+}
+
 .footer-logo-htmlacademy {
-  margin-left: 53px;
+  margin-left: 31px;
+  padding: 18px 22px 13px;
   align-self: center;
+  border-radius: 10px;
+}
+
+.footer-logo-htmlacademy:hover .footer-logo-icon {
+  fill: #756257;
+}
+
+.footer-logo-htmlacademy:focus-visible {
+  box-shadow: inset 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.footer-logo-htmlacademy:active {
+  opacity: 0.3;
 }
 
 .footer-phone {
@@ -349,11 +527,18 @@ fieldset {
   margin-left: 11px;
 }
 
+.footer-social-icon {
+  display: block;
+  fill: #83b3d3;
+}
+
 .footer-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   margin-right: 5px;
-  margin-bottom: 5px;
   list-style-type: none;
 }
 
@@ -387,8 +572,8 @@ fieldset {
   padding-top: 31px;
   padding-bottom: 31px;
   text-align: center;
-  border-top: 1px solid #E6E6E6;
-  border-bottom: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .hotel-card {
@@ -402,7 +587,7 @@ fieldset {
     "img    gap    btn-d  gap6   btn-f  gap3    rating";
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
 }
 
 .hotel-card-cost {
@@ -468,6 +653,14 @@ input[name="email"] {
   background-color: #f2f2f2;
   border: none;
   border-radius: 10px 0px 0px 10px;
+}
+
+.icon-favorites-ellipse {
+  position: absolute;
+  top: 0px;
+  left: 22px;
+  width: 19px;
+  height: 19px;
 }
 
 .mailing {
@@ -549,10 +742,21 @@ input[name="email"] {
 }
 
 .main-screen-image {
+  position: relative;
   background-color: #83b3d3;
   background-image: url("/img/index/background_welcome.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.main-screen-image::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1200px;
+  height: 57px;
+  background-image: url(/img/index/background-divider.svg);
+  content: "";
 }
 
 .main-screen-logo {
@@ -571,9 +775,25 @@ input[name="email"] {
 }
 
 .navigation {
+  position: relative;
   display: flex;
   width: 1200px;
   margin: 0 auto;
+}
+
+.navigation::after {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  width: 138px;
+  height: 70px;
+  margin-left: -69px;
+  background-image: url(/img/logo_sedona.svg);
+  content: "";
+}
+
+.navigation-icon {
+  fill: #000000;
 }
 
 .navigation-item {
@@ -581,16 +801,45 @@ input[name="email"] {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
-  padding-top: 19px;
-  padding-right: 17px;
-  padding-left: 16px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-left: 4px;
+  padding-bottom: 14px;
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+}
+
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link:focus-visible .focus-wrapper {
+  color: #756257;
+  outline: 3px solid #83b3d3;
+}
+
+.navigation-link:focus-visible {
+  outline: none;
+}
+
+.navigation-link:active {
+  outline: none;
+  opacity: 0.3;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 17px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .navigation-list {
@@ -612,11 +861,55 @@ input[name="email"] {
   max-width: 300px;
 }
 
-.navigation-user-item {
-  display: block;
-  min-width: 18px;
-  min-height: 18px;
-  margin-right: 20px;
+.navigation-user-favorites {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-right: 23px;
+  padding: 10px;
+}
+
+.navigation-user-favorites:hover .navigation-icon {
+  fill: #756257;
+}
+
+.navigation-user-favorites:focus-visible {
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.navigation-user-favorites:active {
+  opacity: 0.3;
+}
+
+.navigation-user-favorites .navigation-icon,
+.navigation-user-search .navigation-icon {
+  vertical-align: text-top;
+}
+
+.navigation-user-search {
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+}
+
+.navigation-user-search:hover .navigation-icon {
+  fill: #756257;
+}
+
+.navigation-user-search:focus-visible {
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.navigation-user-search:focus-visible .navigation-icon {
+  fill: #756257;
+}
+
+.navigation-user-search:active {
+  opacity: 0.3;
 }
 
 .page-footer {
@@ -797,10 +1090,3 @@ select[name="rendering"] {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/*
-{
-outline: 5px solid rgba(255, 99, 78, 0.5);
-outline-offset: -5px;
-}
-*/
