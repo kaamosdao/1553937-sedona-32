@@ -1823,11 +1823,16 @@ html {
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  background-color: #cccccc;
+}
+
 .range-toggle:focus-visible {
   outline: 3px solid #83b3d3;
 }
 
 .range-toggle:active {
+  background-color: #ffffff;
   outline: 2px solid #83b3d3;
 }
 
