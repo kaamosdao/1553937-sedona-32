@@ -826,6 +826,10 @@ img {
   padding-left: 39px;
 }
 
+.control:hover {
+  cursor: pointer;
+}
+
 .control-checkbox-mark {
   position: absolute;
   width: 20px;
@@ -1565,17 +1569,6 @@ img {
   margin: 0 auto;
 }
 
-.navigation::after {
-  position: absolute;
-  left: 50%;
-  z-index: 2;
-  width: 138px;
-  height: 70px;
-  margin-left: -69px;
-  background-image: url("../img/logo_sedona.svg");
-  content: "";
-}
-
 .navigation-icon {
   fill: #000000;
 }
@@ -1635,6 +1628,21 @@ img {
   margin-left: 55px;
   padding: 0;
   width: 400px;
+}
+
+.navigation-logo {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  width: 138px;
+  height: 70px;
+  margin-left: -69px;
+  background-image: url("../img/logo_sedona.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation-logo:hover {
+  cursor: pointer;
 }
 
 .navigation-user {
@@ -2122,6 +2130,7 @@ img {
 
 .select-control:hover {
   border-color: #83b3d3;
+  cursor: pointer;
 }
 
 .select-control:focus {
