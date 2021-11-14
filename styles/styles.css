@@ -1228,23 +1228,29 @@ img {
   border-radius: 4px;
 }
 
-.hotel-card-star {
-  width: 18px;
-  height: 17px;
-  margin-top: 3px;
-  margin-right: 7px;
-  background-image: url("../img/catalog/icon_star.svg");
-  background-repeat: no-repeat;
-}
-
 .hotel-card-star:last-child {
   margin-right: 0;
 }
 
 .hotel-card-stars {
   grid-area: stars;
-  display: flex;
-  justify-content: center;
+  justify-self: center;
+  margin-top: 4px;
+  height: 17px;
+  background-image: url("../img/catalog/icon_star_with_indent.svg");
+  background-repeat: repeat-x;
+}
+
+.hotel-card-stars-four {
+  width: 91px;
+}
+
+.hotel-card-stars-three {
+  width: 68px;
+}
+
+.hotel-card-stars-two {
+  width: 43px;
 }
 
 .hotel-card-title {
