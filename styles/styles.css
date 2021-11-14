@@ -294,6 +294,7 @@ img {
   width: 151px;
   min-height: 37px;
   padding: 9px;
+  text-decoration: none;
   box-sizing: border-box;
   background-color: #756257;
   border-radius: 4px;
